@@ -29,6 +29,9 @@ function App() {
       ) : (
         <>
             <h1>Login Page</h1>
+
+            {isAuthenticated === false && <h4>Invalid username or password</h4>}
+
             <form onSubmit={handleSubmit}>
               <label>Username:</label>
               <input 
